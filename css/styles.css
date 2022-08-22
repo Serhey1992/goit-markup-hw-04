@@ -284,7 +284,12 @@ body{
     display: flex;
     list-style: none;
 }
+.section-title .team{
+    background-color: #fff;
+}
 .team .item{
+    display: inline-block;
+    background-color: var(--primary-bcg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -307,7 +312,7 @@ body{
     line-height: 1.2;
 }
 .team .post{
-    padding-bottom: 30px;
+    padding-bottom: 16px;
     text-align: center;
 
     font-size: 16px;
@@ -316,21 +321,99 @@ body{
 .social-networks{
     display: flex;
     list-style: none;
+    justify-content: center;
+    column-gap: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
 }
 .team-link{
+    display: inline-block;
     width: 44px;
     height: 44px;
+    color: #AFB1B8;
     border: 0;
     border-radius: 50%;
-    background-color: #2196F3;
+    background-color: var(--primary-bcg-color);
     padding: 12px 12px;
+}
+.team-link:hover{
+    color: #fff;
+    background-color: var(--acent-color);
 }
 .instagram-team-icon{
     width: 20px;
     height: 20px;
+    fill: currentColor;
+}
+.twitter-team-icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.facebook-team-icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.linkedin-team-icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 .section-backgraund{
     background-color: #F5F4FA;
+}
+/* customers section */
+.customers{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    column-gap: 30px;
+}
+.customer-link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.customer-link:hover{
+    color: var(--acent-color);
+    border-color: var(--acent-color);
+}
+.ya-and-co-icon{
+    width: 41px;
+    height: 46px;
+    fill: currentColor;
+}
+.tagline-icon{
+    width: 40px;
+    height: 52px;
+    fill: currentColor;
+}
+.company-icon{
+    width: 44px;
+    height: 40px;
+    fill: currentColor;
+}
+.foster-icon{
+    width: 84px;
+    height: 40px;
+    fill: currentColor;
+}
+.brand-icon{
+    width: 62.54px;
+    height: 45.43px;
+    fill: currentColor;
+}
+.tag-line-icon{
+    width: 94px;
+    height: 44px;
+    fill: currentColor;
 }
 /*footer*/
 .footer{
@@ -392,6 +475,29 @@ body{
 .footer-section .item:last-child{
     margin-bottom: 0px;
 }
+.footer-container{
+    width: 206px;
+    height: 80px;
+    outline: 1px solid #2196F3;
+}
+.social-link{
+    display: flex;
+    list-style: none;
+}
+.footer-link{
+    display: inline-block;
+    padding: 12px 12px;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.instagram-icon{
+    width: 20px;
+    height: 20px;
+}
+
 /*button portfolio*/
 .button{
     display: flex;
