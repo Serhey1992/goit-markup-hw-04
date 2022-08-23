@@ -337,7 +337,8 @@ body{
     background-color: var(--primary-bcg-color);
     padding: 12px 12px;
 }
-.team-link:hover{
+.team-link:hover,
+.team-link:focus{
     color: #fff;
     background-color: var(--acent-color);
 }
@@ -381,7 +382,8 @@ body{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-.customer-link:hover{
+.customer-link:hover,
+.customer-link:focus{
     color: var(--acent-color);
     border-color: var(--acent-color);
 }
@@ -420,6 +422,10 @@ body{
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
+}
+.basement{
+    display: flex;
+    align-items: baseline;
 }
 .footer-section{
     list-style: none;
@@ -475,14 +481,26 @@ body{
 .footer-section .item:last-child{
     margin-bottom: 0px;
 }
-.footer-container{
+.footer-link-container{
+    margin-left: 70px;
     width: 206px;
     height: 80px;
-    outline: 1px solid #2196F3;
+}
+.footer-title{
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
 }
 .social-link{
     display: flex;
     list-style: none;
+    justify-content: space-between;
 }
 .footer-link{
     display: inline-block;
@@ -493,7 +511,23 @@ body{
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
 }
+.footer-link:hover,
+.footer-link:focus{
+    background-color: var(--acent-color);
+}
 .instagram-icon{
+    width: 20px;
+    height: 20px;
+}
+.twitter-icon{
+    width: 20px;    
+    height: 20px;
+}
+.facebook-icon{
+    width: 20px;
+    height: 20px;
+}
+.linkedin-icon{
     width: 20px;
     height: 20px;
 }
