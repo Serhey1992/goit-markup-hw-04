@@ -78,6 +78,7 @@ h1, h2, h3, p, ul{
 }
 .feedback .link {
     display: inline-flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -129,7 +130,6 @@ body{
 /*секція герой*/
 .hero-section{
     max-width: 1600px;
-    height: 600px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -204,30 +204,10 @@ body{
 .benefits .item+ .item{
     margin-left: 30px;
 }
-/* .benefits .title::before{
-    display: block;
-    content: " ";
-    height: 120px;
-    background-size: contain;
-    background-position: center;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    margin-bottom: 30px;
-}
-.benefits .first::before{
-    background-image: url(../images/Group-first.svg);
-}
-.benefits .second::before{
-    background-image: url(../images/Group-second.svg);
-}
-.benefits .third::before{
-    background-image: url(../images/Group-third.svg);
-}
-.benefits .fourth::before{
-    background-image: url(../images/Group-fourth.svg);
-} */
 .benefits-conteiner{
-    padding: 25px 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     height: 120px;
     background: #F5F4FA;
@@ -323,19 +303,18 @@ body{
     list-style: none;
     justify-content: center;
     column-gap: 10px;
-    padding-left: 32px;
-    padding-right: 32px;
     padding-bottom: 30px;
 }
 .team-link{
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     color: #AFB1B8;
     border: 0;
     border-radius: 50%;
     background-color: var(--primary-bcg-color);
-    padding: 12px 12px;
 }
 .team-link:hover,
 .team-link:focus{
@@ -503,8 +482,9 @@ body{
     justify-content: space-between;
 }
 .footer-link{
-    display: inline-block;
-    padding: 12px 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     border: 0;
@@ -603,7 +583,6 @@ body{
 }
 .examples-link:hover,
 .examples-link:focus{
-    color: var(--acent-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .examples-link {
